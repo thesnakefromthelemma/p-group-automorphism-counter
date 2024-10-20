@@ -1,11 +1,11 @@
 -- IMPORTS
 
 import Prelude hiding ( putStr 
-                              , getChar 
-                              , getLine 
-                              , putStr 
-                              , putStrLn 
-                              , sum      )
+                      , getChar 
+                      , getLine 
+                      , putStr 
+                      , putStrLn 
+                      , sum      )
 
 import Data.List ( foldl'
                  , sort

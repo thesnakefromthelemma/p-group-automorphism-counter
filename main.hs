@@ -129,7 +129,7 @@ main =
             case exps of
                 []   -> putStrLn $ "The Abelian p-group 0 has 1 automorphism."
                 exps -> putStrLn $ "The Abelian p-group " ++ showGroup exps ++ " has p^" ++ show (pExp exps) ++ " * " ++ (showEtc . etc) exps ++ " automorphisms."
-            putStr "Type \'n\' to continue or enter any other character to quit: "; c <- getChar; putStrLn ""; case c of
+            putStr "Type \'n\' to continue or enter any other character to quit: "; c <- getChar; newLine; case c of
                 'n' -> do newLine; mainR
                 _   -> do putStrLn "Bye!"; return ()
     in  do putStrLn "Given a finitely-generated Abelian p-group G, this program computes |Aut(G)| as a rational function of the prime p.\n"; mainR
